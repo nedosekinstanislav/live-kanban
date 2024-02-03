@@ -28,6 +28,7 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 // import '~/index.css'
 
 import { createApp } from 'vue';
-import App from '@/components/App.vue';
+import App from '@/App.vue';
+import '@/stylesheets/application.tailwind.css';
 
 let app = createApp(App).mount('#app');

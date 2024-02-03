@@ -10,6 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# rails g scaffold List name position:integer
+# rails g scaffold Card list:reference name position:integer
+
 ActiveRecord::Schema[7.0].define(version: 2024_01_27_070604) do
   create_table "cards", force: :cascade do |t|
     t.integer "list_id", null: false
